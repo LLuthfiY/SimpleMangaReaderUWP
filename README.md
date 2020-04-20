@@ -1,5 +1,5 @@
 # SimpleMangaReaderUWP
-read your downloaded manga\\
+read your downloaded manga<br/>
 manga reader for UWP, only support png and jpg format
 
 error?
