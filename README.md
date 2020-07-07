@@ -20,7 +20,7 @@ B --> previous chapter
 
 
 ### originality
-the only part i copied from internet is
+the only part i copied from external source excluding UWP documentation is
 ```
 Path.GetFullPath(Path.Combine(currentpath, @"..\\"))
 ```
