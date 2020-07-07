@@ -3,7 +3,7 @@ read your downloaded manga<br/>
 manga reader for UWP, only support png and jpg format
 
 error?
-try:
+try to enable systemFile permission for rthis ap
 ```
 setting --> privacy --> file system then give this app permission to read your file system
 ```
@@ -28,4 +28,4 @@ Path.GetFullPath(Path.Combine(currentpath, @"..\\"))
 this code will give you the parent dir from current dir
 
 ### © 2009 M luthfi 
-### LLuthfiY@outlook.com
+LLuthfiY@outlook.com
