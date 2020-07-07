@@ -8,4 +8,4 @@ UWP ( universal windows platform ) is platform that based on WIndowss runtime AP
 - third, scrollViewer in WPF doesn't have zoom function, so i must to create fuction to resize the image 
 
 #### TODO
-- create a filter function, so i can change the image color, it's easy in python, but not in UWP. these so many image format like bitmap, bitmapImage, WriteableBitmap, softwareBitmap etc. 
+- create a filter function, so i can change the image color, it's easy in python, but not in UWP. there so many image format like bitmap, bitmapImage, WriteableBitmap, softwareBitmap etc. 
