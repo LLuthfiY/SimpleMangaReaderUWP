@@ -68,14 +68,14 @@ ImageList.cs
 #### statistic 
 number of lines that i write 
 
-MainPage.xaml.cs = 89
-MainPage.xaml = 82
-FolderViewer.xaml.cs = 207
-FolderViewer.xaml = 60
-ImageViewer.xaml.cs = 260
-ImageViewer.xaml = 82
-ImageList.cs = 7
-ListItem.cs = 8
+MainPage.xaml.cs = 89 <br>
+MainPage.xaml = 82 <br>
+FolderViewer.xaml.cs = 207 <br>
+FolderViewer.xaml = 60 <br>
+ImageViewer.xaml.cs = 260 <br>
+ImageViewer.xaml = 82 <br>
+ImageList.cs = 7 <br>
+ListItem.cs = 8 <br
 
 
 
