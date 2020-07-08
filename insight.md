@@ -13,7 +13,8 @@ UWP ( universal windows platform ) is platform that based on WIndowss runtime AP
 #### update
 colorTone Function
 ![ColorTone](https://github.com/LLuthfiY/SimpleMangaReaderUWP/blob/master/screenshot/Todo/Progress/progress_colorToneFunction.png)
-
+![shamikoe](https://github.com/LLuthfiY/SimpleMangaReaderUWP/blob/master/screenshot/ImageReader.png)
+![shamikoeColorTone](https://github.com/LLuthfiY/SimpleMangaReaderUWP/blob/master/screenshot/Todo/Progress/ColorTone.png)
  i need to edit my image in stream function 
  ```
 WriteableBitmap writeableBitmap = BitmapFactory.New(1, 1);
