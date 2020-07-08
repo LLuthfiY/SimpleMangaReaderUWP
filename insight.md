@@ -29,9 +29,6 @@ using (IRandomAccessStream fileStream = await file.OpenAsync(FileAccessMode.Read
                                             (byte)(((float)Color.B / 255f) * (blue1 - blue2) + blue2)
                                             )
     );
-
-
-    //WriteableBitmap newWB = ColorTintAsync(writeableBitmap, 200, 200, 100, 33, 33, 33);
     ObservableImage.Add(new ImageListTest
     {
         ImagePath = path,
@@ -42,6 +39,6 @@ using (IRandomAccessStream fileStream = await file.OpenAsync(FileAccessMode.Read
 
  ```
  
- or it will send me an error "System.AccessViolationException: 'Attempted to read or write protected memory. This is often an indication that other memory is corrupt", 
+ or it will give me an error "System.AccessViolationException: 'Attempted to read or write protected memory. This is often an indication that other memory is corrupt", 
  
  
