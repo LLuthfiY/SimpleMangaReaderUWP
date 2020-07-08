@@ -75,7 +75,7 @@ FolderViewer.xaml = 60 <br>
 ImageViewer.xaml.cs = 260 <br>
 ImageViewer.xaml = 82 <br>
 ImageList.cs = 7 <br>
-ListItem.cs = 8 <br
+ListItem.cs = 8 
 
 
 
