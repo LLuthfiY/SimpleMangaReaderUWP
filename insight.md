@@ -14,5 +14,37 @@ UWP ( universal windows platform ) is platform that based on WIndowss runtime AP
 colorTone Function
 ![ColorTone](https://github.com/LLuthfiY/SimpleMangaReaderUWP/blob/master/screenshot/Todo/Progress/progress_colorToneFunction.png)
 
+ i need to edit my image in stream function 
+ ```
+WriteableBitmap writeableBitmap = BitmapFactory.New(1, 1);
+StorageFile file = await StorageFile.GetFileFromPathAsync(path);
+using (IRandomAccessStream fileStream = await file.OpenAsync(FileAccessMode.Read))
+{
+
+    //await writeableBitmap.SetSourceAsync(fileStream);
+    //wb.FromStream(fileStream);
+    WriteableBitmap wb = await BitmapFactory.New(1, 1).FromStream(fileStream);
+
+    Debug.WriteLine((wb.GetPixel(1, 1).B / 255) * (blue1 - blue2) + blue2);
+    wb.ForEach((x, y, Color) => Color.FromArgb(Color.A,
+                                            (byte)(((float)Color.R / 255f) * (red1 - red2) + red2),
+                                            (byte)(((float)Color.G / 255f) * (green1 - green2) + green2),
+                                            (byte)(((float)Color.B / 255f) * (blue1 - blue2) + blue2)
+                                            )
+    );
+
+
+    //WriteableBitmap newWB = ColorTintAsync(writeableBitmap, 200, 200, 100, 33, 33, 33);
+    ObservableImage.Add(new ImageListTest
+    {
+        ImagePath = path,
+        ImageContent = wb
+
+    });
+}
+
+ ```
+ 
+ or it will send me an error "System.AccessViolationException: 'Attempted to read or write protected memory. This is often an indication that other memory is corrupt", 
  
  
