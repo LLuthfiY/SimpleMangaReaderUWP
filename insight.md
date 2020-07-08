@@ -20,9 +20,6 @@ WriteableBitmap writeableBitmap = BitmapFactory.New(1, 1);
 StorageFile file = await StorageFile.GetFileFromPathAsync(path);
 using (IRandomAccessStream fileStream = await file.OpenAsync(FileAccessMode.Read))
 {
-
-    //await writeableBitmap.SetSourceAsync(fileStream);
-    //wb.FromStream(fileStream);
     WriteableBitmap wb = await BitmapFactory.New(1, 1).FromStream(fileStream);
 
     Debug.WriteLine((wb.GetPixel(1, 1).B / 255) * (blue1 - blue2) + blue2);
