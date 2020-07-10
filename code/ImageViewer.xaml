@@ -102,32 +102,32 @@
 
         </Grid>
         <Grid x:Name="Setting_panel" Background="#2a2239" Visibility="Collapsed" Width="500px" HorizontalAlignment="Left" Margin="0,120, 0,0" >
-            <TextBlock Text="ColorTone" Width="100" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50, 50"/>
-            <ToggleSwitch x:Name="ColorToneSwitch" IsOn="false" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="160, 45" />
+            <TextBlock Text="ColorTone" Width="100" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50, 50,0,0"/>
+            <ToggleSwitch x:Name="ColorToneSwitch" IsOn="false" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="160, 45,0,0" />
             
             <!-- Color 1 -->
-            <TextBlock Text="RED 1" Width="100" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50, 80"/>
-            <TextBox x:Name="RED1" Width="100" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50, 110"/>
+            <TextBlock Text="RED 1" Width="100" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50, 80,0,0"/>
+            <TextBox x:Name="RED1" Width="100" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50, 110,0,0"/>
 
-            <TextBlock Text="GREEN 1" Width="100" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50, 160"/>
-            <TextBox x:Name="GREEN1" Width="100" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50, 190"/>
+            <TextBlock Text="GREEN 1" Width="100" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50, 160,0,0"/>
+            <TextBox x:Name="GREEN1" Width="100" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50, 190,0,0"/>
 
-            <TextBlock Text="BLUE 1" Width="100" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50, 240"/>
-            <TextBox x:Name="BLUE1" Width="100" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50, 270"/>
+            <TextBlock Text="BLUE 1" Width="100" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50, 240,0,0"/>
+            <TextBox x:Name="BLUE1" Width="100" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50, 270,0,0"/>
 
             
             <!-- Color 2 -->
-            <TextBlock Text="RED 2" Width="100" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200, 80"/>
-            <TextBox x:Name="RED2" Width="100" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200, 110"/>
+            <TextBlock Text="RED 2" Width="100" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200, 80,0,0"/>
+            <TextBox x:Name="RED2" Width="100" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200, 110,0,0"/>
 
-            <TextBlock Text="GREEN 2" Width="100" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200, 160"/>
-            <TextBox x:Name="GREEN2" Width="100" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200, 190"/>
+            <TextBlock Text="GREEN 2" Width="100" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200, 160,0,0"/>
+            <TextBox x:Name="GREEN2" Width="100" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200, 190,0,0"/>
 
-            <TextBlock Text="BLUE 2" Width="100" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200, 240"/>
-            <TextBox x:Name="BLUE2" Width="100" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200, 270"/>
+            <TextBlock Text="BLUE 2" Width="100" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200, 240,0,0"/>
+            <TextBox x:Name="BLUE2" Width="100" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200, 270,0,0"/>
             
             <!-- button -->
-            <Button x:Name="ColorToneApplyButton" Click="ColorToneApplyButton_Click" Content="APPLY" Width="100" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50, 350"/>
+            <Button x:Name="ColorToneApplyButton" Click="ColorToneApplyButton_Click" Content="APPLY" Width="100" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50, 350,0,0"/>
         </Grid>  
     </Grid>
 
