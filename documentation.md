@@ -1,5 +1,5 @@
 #### motivation and background
-i just want to read my downloaded manga in slide down Mode, that's it
+i just want to read my downloaded manga in slide down Mode
 
 #### project duration
 3 week
