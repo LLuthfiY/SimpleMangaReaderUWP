@@ -17,7 +17,10 @@ N/ double click --> next chapter
 B --> previous chapter
 ```
 
+red1, green1, blue1 means light color in the manga's page will be converted to rgb1 color
+red2, green2, blue2 means dark color in the manga's page will be converted to rgb2 color
 
+---
 
 ### originality
 the only part i copied from external source excluding UWP documentation is
