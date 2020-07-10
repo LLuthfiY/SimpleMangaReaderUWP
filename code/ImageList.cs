@@ -10,6 +10,6 @@ namespace Manga
     class ImageList
     {
         public string ImagePath { get; set; }
-        public BitmapImage ImageContent { get; set; }
+        public WriteableBitmap ImageContent { get; set; }
     }
 }
