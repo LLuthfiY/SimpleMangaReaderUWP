@@ -9,7 +9,7 @@ UWP ( universal windows platform ) is platform that based on WIndowss runtime AP
 
 ## TODO
 - [x] create a filter function, so i can change the image colorTone, it's easy in python, but not in UWP. there so many image format like bitmap, bitmapImage, WriteableBitmap, softwareBitmap etc. 
-- [ ] create setting interface for colorTone function
+- [x] create setting interface for colorTone function
 #### update
 colorTone Function
 ![ColorTone](https://github.com/LLuthfiY/SimpleMangaReaderUWP/blob/master/screenshot/Todo/Progress/progress_colorToneFunction.png)
