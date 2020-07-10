@@ -1,52 +1,73 @@
-﻿<Page
-    x:Class="Manga.ImageViewer"
+<Page
+    x:Class="Manga_Tosaku.ImageViewer"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Manga"
+    xmlns:local="using:Manga_Tosaku"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     RequestedTheme="Dark"
-    Background="#1a2229">
+    Background="#1a2229"
+    
+    xmlns:ff="using:FFImageLoading"
+    xmlns:fft="using:FFImageLoading.Transformations"
+    >
 
-    <Grid x:Name="grid" KeyUp="Grid_KeyUp">
-        <Grid Margin="0,0,0,0">
+    <Grid x:Name="grid" >
+        <Grid Margin="0,0,0,0" KeyUp="Grid_KeyUp">
+            <TextBlock x:Name="textoyy" Width="1000" Height="50" VerticalAlignment="Top" Visibility="Collapsed"> damn</TextBlock>
             <ScrollViewer x:Name="scrollView" ZoomMode="Enabled" CanBeScrollAnchor="True" 
-                          VerticalScrollMode="Auto" IsTabStop="True"
-                          UseSystemFocusVisuals="False" TabIndex="1"
-                          IsRightTapEnabled="True"
-                          RightTapped="scrollView_RightTapped"
-                          DoubleTapped="scrollView_DoubleTapped"
-                          Holding="scrollView_Holding">
+                          
+                        VerticalScrollMode="Auto" 
+                        UseSystemFocusVisuals="True" TabIndex="1"
+                          
+                          
+                        IsRightTapEnabled="True"
+                        RightTapped="scrollView_RightTapped"
+                        DoubleTapped="scrollView_DoubleTapped"
+                          
+                        
+                        Holding="scrollView_Holding"
+                        HorizontalScrollMode="Auto"
+                        HorizontalScrollBarVisibility="Auto"
+                        
+                        HorizontalContentAlignment="Center"
+                        
+                          
+                        >
 
-                <Grid>
+
+                <Grid HorizontalAlignment="Center">
                     <ListView x:Name="listView" 
                           
                           ItemsSource="{x:Bind Path=ObservableImage}" 
                           SelectedItem="{x:Bind Path=ObservableImage}" 
                           
                           SelectionMode="None"
-                          
+                          HorizontalContentAlignment="Center"
                           IsHitTestVisible="False"
                           IsAccessKeyScope="False"
                           ScrollViewer.VerticalScrollMode="Auto"
                           TabIndex="0"
                           IsTabStop="True"
+                          HorizontalAlignment="Stretch"
                           
                           >
 
-                        <ListView.ItemTemplate>
-                            <DataTemplate x:DataType="local:ImageList" >
-                                <StackPanel>
-                                    <Image Source="{x:Bind ImageContent}">
+                        <ListView.ItemTemplate >
+                            <DataTemplate x:DataType="local:ImageList"  >
+                                <Image Source="{x:Bind ImageContent}" HorizontalAlignment="Center"  >
 
-                                    </Image>
-                                </StackPanel>
-
+                                </Image>
+                                
                             </DataTemplate>
                         </ListView.ItemTemplate>
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="ListViewItem">
+                                <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+                            </Style>
+                        </ListView.ItemContainerStyle>
                     </ListView>
-
                 </Grid>
 
             </ScrollViewer>
@@ -65,10 +86,49 @@
                     Width="40"
                     Margin="0,40,0,0"
                     />
-
+            <Button
+                    FontFamily="Segoe MDL2 Assets" 
+                    FontSize="14" 
+                    Content="&#xE713;" 
+                    Background="#1a2229" 
+                    x:Name="Settings" 
+                    Click="Settings_Click"
+                    VerticalAlignment="Top" 
+                    TabIndex="2" 
+                    Height="40" 
+                    Width="40"
+                    Margin="0,80,0,0"
+                />
 
         </Grid>
+        <Grid x:Name="Setting_panel" Background="#2a2239" Visibility="Collapsed" Width="500px" HorizontalAlignment="Left" Margin="0,120, 0,0" >
+            <TextBlock Text="ColorTone" Width="100" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50, 50"/>
+            <ToggleSwitch x:Name="ColorToneSwitch" IsOn="false" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="160, 45" />
+            
+            <!-- Color 1 -->
+            <TextBlock Text="RED 1" Width="100" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50, 80"/>
+            <TextBox x:Name="RED1" Width="100" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50, 110"/>
 
+            <TextBlock Text="GREEN 1" Width="100" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50, 160"/>
+            <TextBox x:Name="GREEN1" Width="100" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50, 190"/>
+
+            <TextBlock Text="BLUE 1" Width="100" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50, 240"/>
+            <TextBox x:Name="BLUE1" Width="100" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50, 270"/>
+
+            
+            <!-- Color 2 -->
+            <TextBlock Text="RED 2" Width="100" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200, 80"/>
+            <TextBox x:Name="RED2" Width="100" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200, 110"/>
+
+            <TextBlock Text="GREEN 2" Width="100" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200, 160"/>
+            <TextBox x:Name="GREEN2" Width="100" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200, 190"/>
+
+            <TextBlock Text="BLUE 2" Width="100" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200, 240"/>
+            <TextBox x:Name="BLUE2" Width="100" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200, 270"/>
+            
+            <!-- button -->
+            <Button x:Name="ColorToneApplyButton" Click="ColorToneApplyButton_Click" Content="APPLY" Width="100" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50, 350"/>
+        </Grid>  
     </Grid>
 
 
