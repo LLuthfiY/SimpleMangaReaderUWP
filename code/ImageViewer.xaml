@@ -20,7 +20,7 @@
                           
                         VerticalScrollMode="Auto" 
                         UseSystemFocusVisuals="True" TabIndex="1"
-                          
+                        IsTabStop="True"
                           
                         IsRightTapEnabled="True"
                         RightTapped="scrollView_RightTapped"
