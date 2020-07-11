@@ -30,5 +30,5 @@ Path.GetFullPath(Path.Combine(currentpath, @"..\\"))
 
 this code will give you the parent dir from current dir
 
-### © 2009 M luthfi 
+
 LLuthfiY@outlook.com
