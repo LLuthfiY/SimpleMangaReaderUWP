@@ -31,4 +31,4 @@ Path.GetFullPath(Path.Combine(currentpath, @"..\\"))
 this code will give you the parent dir from current dir
 
 
-LLuthfiY@outlook.com
+[email : LLuthfiY](mailto:LLuthfiY@outlook.com)
